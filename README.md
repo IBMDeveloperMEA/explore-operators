@@ -1,12 +1,15 @@
 # Explore Operators and Simplify App Deployment
 ## Architecture Diagram
 ![image](https://user-images.githubusercontent.com/36239840/124466277-8bd1ee00-dda7-11eb-8aed-3e35394ca263.png)
+![image](https://user-images.githubusercontent.com/36239840/124932347-0d2db880-e014-11eb-9627-b15778f99825.png)
+![image](https://user-images.githubusercontent.com/36239840/124932424-1e76c500-e014-11eb-95aa-f864a44f93fc.png)
+
 ## Prerequisites
 - Register to participate in the live stream or watch the replay: https://www.crowdcast.io/e/bsok-bootcamp/
 - Create your free IBM Cloud account at https://ibm.biz/bsok-series
 - Red Hat OpenShift Cluster
-  - URL: TBA
-  - Key: TBA
+  - URL: https://bsokbootcamp.mybluemix.net/
+  - Key: oslab
 ## Steps
 - <a href="https://github.com/IBMDeveloperMEA/explore-operators/blob/master/README.md">Create Project & Deploy frontend app</a>
 - <a href="https://github.com/IBMDeveloperMEA/explore-operators/blob/master/ex2.md">Install IBM Cloud Operator from Operator Hub</a>
