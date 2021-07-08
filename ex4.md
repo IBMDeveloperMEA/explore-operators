@@ -23,16 +23,14 @@ Once the application is deployed (this might take a minute), notice the pod gets
 <br>![image](https://user-images.githubusercontent.com/36239840/124463811-760ef980-dda4-11eb-816a-6202740c1e31.png)<br>
 6.	Navigate to the Environment tab of the patient-db application and click Add from Config Map or Secret under the Single values (env) section.
 <br>![image](https://user-images.githubusercontent.com/36239840/124463843-81fabb80-dda4-11eb-83d5-73fbb4ee3bbd.png)<br>
-7.	Enter CLOUDANT_URL as the environment variable name, select cloudant-binding as the resource and url for the key.
-```CLOUDANT_URL
+7.	Enter ```CLOUDANT_URL``` as the environment variable name, select ```cloudant-binding``` as the resource and url for the key.
+```
+CLOUDANT_URL
 ```
 ```
 url
 ```
 If you do not see the cloudant-binding in the resource pulldown, you most likely created the operator service and binding in the default project instead of the example-health project. If this is the case, you need to delete the existing binding and service in the IBM Cloud operator and recreate them using the example-health project. Refer to back to Exercise 3 for directions.
-```
-CLOUDANT_URL
-```
 <br>![image](https://user-images.githubusercontent.com/36239840/124463946-a35ba780-dda4-11eb-877d-5a8792ca050a.png)<br>
 8.	Click Save.
 <br>![image](https://user-images.githubusercontent.com/36239840/124464050-c0907600-dda4-11eb-86fd-c6a59e0e58b1.png)<br>
