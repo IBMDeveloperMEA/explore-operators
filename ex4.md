@@ -12,13 +12,13 @@ Now using project "example-health" on server "https://c106-e.us-south.containers
 ```
 oc new-app --name=patient-db centos/nodejs-10-centos7~https://github.com/IBM/ibm-dte-openlab-samples --context-dir="/Red Hat OpenShift on IBM Cloud/nodejs-patientdb-cloudant-master" 
 ```
-After a few minutes, the application is built, however, because we haven't specified our Cloudant DB credentials, the application repeatedly fails to start. Fix this using the OpenShift web console in the next steps.
+After a few minutes, the application is built, however, because we haven't specified our Cloudant DB credentials, the application repeatedly fails to start. Fix this using the OpenShift web console in the next steps.<br>
 3.	Navigate to the Topology page in the Developer perspective of the OpenShift web console.
 If your page doesn't look like the picture below, make sure your Topology view has the project set to "example-health" and application filter set to all applications.
 <br>![image](https://user-images.githubusercontent.com/36239840/124463728-5b3c8500-dda4-11eb-99c0-c32187830ec5.png)<br>
 4.	Navigate to the Resources tab of the patient-db application.
 Once the application is deployed (this might take a minute), notice the pod gets in a "CrashLoop BackOff" state. The deployment is failing because the application requires several environment variable to be set for the binding that you created to the Cloudant database.
-<br>![image](https://user-images.githubusercontent.com/36239840/124463766-67c0dd80-dda4-11eb-954f-f3fcada877a0.png)
+<br>![image](https://user-images.githubusercontent.com/36239840/124463766-67c0dd80-dda4-11eb-954f-f3fcada877a0.png)<br>
 5.	Navigate to the deployment for the patient-db application.
 <br>![image](https://user-images.githubusercontent.com/36239840/124463811-760ef980-dda4-11eb-816a-6202740c1e31.png)<br>
 6.	Navigate to the Environment tab of the patient-db application and click Add from Config Map or Secret under the Single values (env) section.
